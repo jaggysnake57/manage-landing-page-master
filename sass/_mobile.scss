@@ -1,0 +1,198 @@
+@import '_vars';
+@media screen and (max-width: 900px) {
+	.container {
+		width: 90%;
+	}
+	/*=============================================
+	=            navigation            =
+	=============================================*/
+	.hamburger {
+		display: block;
+	}
+
+	header {
+		.topNavigation {
+			position: absolute;
+			flex-direction: column;
+			background-color: white;
+			width: 80%;
+			align-items: center;
+			height: 300px;
+			justify-content: space-around;
+			top: 100px;
+			left: -80%;
+			z-index: 10;
+			transition: left .5s ease-out;
+			a {
+				font-size: 1em;
+			}
+		}
+		.activeNav {
+			left: 10%;
+			transition: left .5s ease-out;
+		}
+	}
+
+	.navMask {
+		display: none;
+		position: absolute;
+		width: 100vw;
+		height: 100vh;
+		top: 0;
+		left: 0;
+		background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, .75));
+		z-index: 5;
+	}
+	.maskActive {
+		display: block;
+	}
+
+	/*=====  End of navigation  ======*/
+	/*=============================================
+	=            hero            =
+	=============================================*/
+
+	.hero {
+		.container {
+			grid-template-columns: 1fr;
+			.title {
+				order: 2;
+				text-align: center;
+				h1 {
+					width: auto;
+				}
+				p {
+					width: auto;
+				}
+			}
+		}
+	}
+	/*=====  End of hero  ======*/
+
+	/*=============================================
+	=            about section            =
+	=============================================*/
+	.aboutMini {
+		.container {
+			grid-template-columns: 1fr;
+		}
+		.aboutTitle {
+			text-align: center;
+			h1 {
+				width: auto;
+			}
+			p {
+				width: auto;
+			}
+		}
+		.aboutPoints {
+			margin-top: 30px;
+			.colBPRow {
+				background-color: $Very-Pale-Red;
+				width: 150%;
+				border-radius: 30px;
+			}
+			.bulletPoint {
+				margin-right: 10px;
+			}
+			.aboutContent {
+				padding-left: 0;
+				text-align: center;
+			}
+		}
+	}
+
+	/*=====  End of about section  ======*/
+
+	/*=============================================
+	=            testimonials            =
+	=============================================*/
+	.overflowHide {
+		padding-top: 50px;
+		overflow: hidden;
+		width: 100%;
+		margin: auto;
+	}
+	.testimonialSlide {
+		width: 120%;
+		left: -10%;
+		.testCard {
+			margin: 0 5px;
+		}
+		.slick-dots {
+			li {
+				button {
+					&::before {
+						content: '';
+						width: 8px;
+						height: 8px;
+						opacity: 1;
+						// background-color: white;
+						border: 1px solid $Bright-Red;
+						border-radius: 15px;
+					}
+				}
+			}
+			li.slick-active button::before {
+				background-color: $Bright-Red;
+			}
+		}
+	}
+
+	/*=====  End of testimonials  ======*/
+
+	/*=============================================
+	=            footer            =
+	=============================================*/
+	footer {
+		.banner {
+			height: auto;
+			.container {
+				flex-direction: column;
+				align-items: center;
+				justify-content: space-evenly;
+				text-align: center;
+				padding: 75px 0;
+				p {
+					width: 100%;
+					margin-bottom: 20px;
+				}
+			}
+		}
+	}
+	.footerMain {
+		.container {
+			flex-direction: column-reverse;
+			align-items: center;
+			height: auto;
+			.updatesForm {
+				width: 100%;
+				input {
+					width: 74%;
+				}
+				button {
+					width: 24%;
+				}
+			}
+		}
+		.footerNav {
+			margin: 50px 0;
+			width: 80%;
+			a {
+				margin-bottom: 20px;
+			}
+		}
+		.footerTitle {
+			width: 100%;
+			flex-direction: column-reverse;
+			.socialButtons {
+				margin-bottom: 40px;
+				svg {
+					transform: scale(1.5);
+				}
+			}
+		}
+	}
+
+	/*=====  End of footer  ======*/
+}

@@ -1,0 +1,416 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/*=============================================
+=            site wide            =
+=============================================*/
+body {
+  font-family: "Be Vietnam", sans-serif; }
+
+.container {
+  width: 78%;
+  max-width: 1440px;
+  margin: 0 auto; }
+
+.started {
+  background-color: #f25f3a;
+  border: none;
+  border-radius: 25px;
+  height: 38px;
+  padding: 0 20px;
+  color: #fafafa;
+  font-weight: 700;
+  box-shadow: 1px 27px 40px 1px rgba(107, 32, 13, 0.4);
+  cursor: pointer;
+  transition: opacity .3s; }
+  .started:hover {
+    opacity: .5;
+    transition: opacity .3s; }
+
+p {
+  color: #9095a7;
+  font: 1em/25px "Be Vietnam", sans-serif; }
+
+h1 {
+  font-size: 2.2em;
+  color: #242d52; }
+
+.backgroundImg {
+  position: absolute;
+  z-index: -1; }
+
+.hamburger {
+  background: none;
+  border: none;
+  display: none;
+  position: relative;
+  z-index: 20; }
+  .hamburger div {
+    width: 40px;
+    height: 3px;
+    background-color: #242d52; }
+
+.navMask {
+  display: none; }
+
+/*=====  End of site wide  ======*/
+/*=============================================
+=            header            =
+=============================================*/
+header {
+  padding-top: 60px; }
+  header .container {
+    display: flex;
+    justify-content: space-between; }
+  header .topNavigation {
+    width: 40%;
+    display: flex;
+    justify-content: space-between; }
+    header .topNavigation a {
+      color: #242d52;
+      text-decoration: none;
+      transition: color .3s;
+      font-size: .9em;
+      font-weight: 500; }
+      header .topNavigation a:hover {
+        color: #9095a7;
+        transition: color .3s; }
+
+/*=====  End of header  ======*/
+/*=============================================
+=            hero section            =
+=============================================*/
+.hero {
+  margin-top: 100px; }
+  .hero .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
+  .hero .title h1 {
+    font-size: 3em;
+    font-weight: 700;
+    color: #242d52;
+    width: 85%;
+    margin-bottom: 30px; }
+  .hero .title p {
+    color: #9095a7;
+    font: 1em/25px "Be Vietnam", sans-serif;
+    margin-bottom: 30px;
+    width: 60%; }
+  .hero .imgHolder {
+    position: relative; }
+    .hero .imgHolder img:nth-child(1) {
+      width: 100%; }
+  .hero .backgroundImg {
+    top: -334px;
+    left: 35px; }
+
+/*=====  End of hero section  ======*/
+/*=============================================
+=            about us section            =
+=============================================*/
+.aboutMini {
+  margin-top: 100px; }
+  .aboutMini .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
+  .aboutMini .aboutTitle {
+    position: relative; }
+    .aboutMini .aboutTitle h1 {
+      width: 80%;
+      font-size: 2.2em;
+      color: #242d52;
+      margin-bottom: 30px; }
+    .aboutMini .aboutTitle p {
+      width: 60%; }
+    .aboutMini .aboutTitle .backgroundImg {
+      left: -600px;
+      bottom: -600px; }
+  .aboutMini .aboutPoints .pointCard {
+    margin-bottom: 40px; }
+  .aboutMini .aboutPoints .colBPRow {
+    display: flex;
+    height: 46px;
+    align-items: baseline; }
+    .aboutMini .aboutPoints .colBPRow h2 {
+      color: #242d52;
+      font: 700 1em "Be Vietnam", sans-serif;
+      margin-bottom: 20px; }
+  .aboutMini .aboutPoints .bulletPoint {
+    height: 100%;
+    display: block;
+    padding-top: 8px;
+    background-color: #f25f3a;
+    color: #fafafa;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 30px;
+    width: 80px;
+    text-align: center;
+    margin-right: 20px; }
+  .aboutMini .aboutPoints .aboutContent {
+    padding-left: 101px;
+    padding-top: 6px; }
+
+/*=====  End of about us section  ======*/
+/*=============================================
+=            testimonials section             =
+=============================================*/
+.test {
+  margin-top: 70px; }
+  .test h1 {
+    text-align: center;
+    margin-bottom: 100px; }
+  .test .started {
+    margin: 0 auto;
+    display: block; }
+
+.testimonialSlide {
+  width: 130%;
+  left: -15%;
+  margin-bottom: 50px; }
+  .testimonialSlide .slick-list {
+    overflow: visible; }
+
+.testCard {
+  background-color: #fafafa;
+  text-align: center;
+  margin-right: 30px; }
+  .testCard img {
+    width: 80px;
+    margin: 0 auto;
+    margin-bottom: -16px;
+    display: block;
+    position: relative;
+    top: -50px; }
+  .testCard h2 {
+    font: 700 1em "Be Vietnam", sans-serif;
+    margin-bottom: 20px; }
+  .testCard p {
+    padding: 0 5%;
+    margin-bottom: 40px; }
+
+/*=====  End of testimonials section   ======*/
+/*=============================================
+=            footer            =
+=============================================*/
+footer {
+  margin-top: 150px; }
+  footer .banner {
+    background-color: #f25f3a;
+    height: 250px; }
+    footer .banner .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 100%; }
+      footer .banner .container p {
+        color: white;
+        font: 700 2.2em "Be Vietnam", sans-serif;
+        width: 40%; }
+  footer .startedAlt {
+    background-color: white;
+    color: #f25f3a;
+    transition: color, .3s; }
+    footer .startedAlt:hover {
+      opacity: 1;
+      color: rgba(242, 95, 58, 0.5);
+      transition: color, .3s; }
+
+.footerMain {
+  background-color: #1d1e25;
+  padding: 30px 0; }
+  .footerMain .container {
+    display: flex;
+    justify-content: space-between;
+    height: 130px; }
+  .footerMain .footerTitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; }
+    .footerMain .footerTitle .socialButtons {
+      width: 100%;
+      display: flex;
+      justify-content: space-between; }
+      .footerMain .footerTitle .socialButtons a:hover path {
+        fill: #f25f3a; }
+  .footerMain .footerNav {
+    display: flex;
+    justify-content: space-between;
+    width: 40%; }
+    .footerMain .footerNav a {
+      color: white;
+      font-size: .9em;
+      text-decoration: none; }
+  .footerMain .navCol {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr); }
+  .footerMain .updatesForm input {
+    height: 45px;
+    padding: 0 30px;
+    border: none;
+    border-radius: 40px;
+    color: #9095a7; }
+  .footerMain .updatesForm button {
+    height: 45px;
+    padding: 0 20px;
+    border-radius: 40px;
+    border: none;
+    background-color: #f25f3a;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    opacity: 1;
+    transition: opacity .3s; }
+    .footerMain .updatesForm button:hover {
+      opacity: .5;
+      transition: opacity .3s; }
+
+/*=====  End of footer  ======*/
+/*=============================================
+=            tablet            =
+=============================================*/
+@media screen and (max-width: 1024px) {
+  header .started {
+    display: none; }
+  header .topNavigation {
+    width: 60%; }
+  .footerMain .footerNav {
+    width: 35%; } }
+
+/*=====  End of tablet  ======*/
+@media screen and (max-width: 900px) {
+  .container {
+    width: 90%; }
+  /*=============================================
+	=            navigation            =
+	=============================================*/
+  .hamburger {
+    display: block; }
+  header .topNavigation {
+    position: absolute;
+    flex-direction: column;
+    background-color: white;
+    width: 80%;
+    align-items: center;
+    height: 300px;
+    justify-content: space-around;
+    top: 100px;
+    left: -80%;
+    z-index: 10;
+    transition: left .5s ease-out; }
+    header .topNavigation a {
+      font-size: 1em; }
+  header .activeNav {
+    left: 10%;
+    transition: left .5s ease-out; }
+  .navMask {
+    display: none;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75));
+    z-index: 5; }
+  .maskActive {
+    display: block; }
+  /*=====  End of navigation  ======*/
+  /*=============================================
+	=            hero            =
+	=============================================*/
+  .hero .container {
+    grid-template-columns: 1fr; }
+    .hero .container .title {
+      order: 2;
+      text-align: center; }
+      .hero .container .title h1 {
+        width: auto; }
+      .hero .container .title p {
+        width: auto; }
+  /*=====  End of hero  ======*/
+  /*=============================================
+	=            about section            =
+	=============================================*/
+  .aboutMini .container {
+    grid-template-columns: 1fr; }
+  .aboutMini .aboutTitle {
+    text-align: center; }
+    .aboutMini .aboutTitle h1 {
+      width: auto; }
+    .aboutMini .aboutTitle p {
+      width: auto; }
+  .aboutMini .aboutPoints {
+    margin-top: 30px; }
+    .aboutMini .aboutPoints .colBPRow {
+      background-color: #ffefeb;
+      width: 150%;
+      border-radius: 30px; }
+    .aboutMini .aboutPoints .bulletPoint {
+      margin-right: 10px; }
+    .aboutMini .aboutPoints .aboutContent {
+      padding-left: 0;
+      text-align: center; }
+  /*=====  End of about section  ======*/
+  /*=============================================
+	=            testimonials            =
+	=============================================*/
+  .overflowHide {
+    padding-top: 50px;
+    overflow: hidden;
+    width: 100%;
+    margin: auto; }
+  .testimonialSlide {
+    width: 120%;
+    left: -10%; }
+    .testimonialSlide .testCard {
+      margin: 0 5px; }
+    .testimonialSlide .slick-dots li button::before {
+      content: '';
+      width: 8px;
+      height: 8px;
+      opacity: 1;
+      border: 1px solid #f25f3a;
+      border-radius: 15px; }
+    .testimonialSlide .slick-dots li.slick-active button::before {
+      background-color: #f25f3a; }
+  /*=====  End of testimonials  ======*/
+  /*=============================================
+	=            footer            =
+	=============================================*/
+  footer .banner {
+    height: auto; }
+    footer .banner .container {
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      text-align: center;
+      padding: 75px 0; }
+      footer .banner .container p {
+        width: 100%;
+        margin-bottom: 20px; }
+  .footerMain .container {
+    flex-direction: column-reverse;
+    align-items: center;
+    height: auto; }
+    .footerMain .container .updatesForm {
+      width: 100%; }
+      .footerMain .container .updatesForm input {
+        width: 74%; }
+      .footerMain .container .updatesForm button {
+        width: 24%; }
+  .footerMain .footerNav {
+    margin: 50px 0;
+    width: 80%; }
+    .footerMain .footerNav a {
+      margin-bottom: 20px; }
+  .footerMain .footerTitle {
+    width: 100%;
+    flex-direction: column-reverse; }
+    .footerMain .footerTitle .socialButtons {
+      margin-bottom: 40px; }
+      .footerMain .footerTitle .socialButtons svg {
+        transform: scale(1.5); }
+  /*=====  End of footer  ======*/ }

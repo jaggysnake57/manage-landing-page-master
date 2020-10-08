@@ -1,0 +1,338 @@
+@import '_vars';
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*=============================================
+=            site wide            =
+=============================================*/
+body {
+	font-family: $main-font;
+}
+.container {
+	width: 78%;
+	max-width: 1440px;
+	margin: 0 auto;
+}
+.started {
+	background-color: $Bright-Red;
+	border: none;
+	border-radius: 25px;
+	height: 38px;
+	padding: 0 20px;
+	color: $Vary-Light-Gray;
+	font-weight: 700;
+	box-shadow: 1px 27px 40px 1px rgba(107, 32, 13, 0.4);
+	cursor: pointer;
+	transition: opacity .3s;
+	&:hover {
+		opacity: .5;
+		transition: opacity .3s;
+	}
+}
+p {
+	color: $Dark-Grayish-Blue;
+	font: 1em/25px $main-font;
+}
+
+h1 {
+	font-size: 2.2em;
+	color: $Dark-Blue;
+}
+.backgroundImg {
+	position: absolute;
+	z-index: -1;
+}
+.hamburger {
+	background: none;
+	border: none;
+	display: none;
+	position: relative;
+	z-index: 20;
+	div {
+		width: 40px;
+		height: 3px;
+		background-color: $Dark-Blue;
+	}
+}
+.navMask {
+	display: none;
+}
+/*=====  End of site wide  ======*/
+
+/*=============================================
+=            header            =
+=============================================*/
+header {
+	padding-top: 60px;
+	.container {
+		display: flex;
+		justify-content: space-between;
+	}
+	.topNavigation {
+		width: 40%;
+		display: flex;
+		justify-content: space-between;
+		a {
+			color: $Dark-Blue;
+			text-decoration: none;
+			transition: color .3s;
+			font-size: .9em;
+			font-weight: 500;
+			&:hover {
+				color: $Dark-Grayish-Blue;
+				transition: color .3s;
+			}
+		}
+	}
+}
+/*=====  End of header  ======*/
+
+/*=============================================
+=            hero section            =
+=============================================*/
+.hero {
+	margin-top: 100px;
+	.container {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+	.title {
+		h1 {
+			font-size: 3em;
+			font-weight: 700;
+			color: $Dark-Blue;
+			width: 85%;
+			margin-bottom: 30px;
+		}
+		p {
+			color: $Dark-Grayish-Blue;
+			font: 1em/25px $main-font;
+			margin-bottom: 30px;
+			width: 60%;
+		}
+	}
+	.imgHolder {
+		position: relative;
+		img:nth-child(1) {
+			width: 100%;
+		}
+	}
+	.backgroundImg {
+		top: -334px;
+		left: 35px;
+	}
+}
+
+/*=====  End of hero section  ======*/
+
+/*=============================================
+=            about us section            =
+=============================================*/
+
+.aboutMini {
+	margin-top: 100px;
+	.container {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+	.aboutTitle {
+		position: relative;
+		h1 {
+			width: 80%;
+			font-size: 2.2em;
+			color: $Dark-Blue;
+			margin-bottom: 30px;
+		}
+		p {
+			width: 60%;
+		}
+		.backgroundImg {
+			left: -600px;
+			bottom: -600px;
+		}
+	}
+	.aboutPoints {
+		.pointCard {
+			margin-bottom: 40px;
+		}
+		.colBPRow {
+			display: flex;
+			height: 46px;
+			align-items: baseline;
+			h2 {
+				color: $Dark-Blue;
+				font: 700 1em $main-font;
+				margin-bottom: 20px;
+			}
+		}
+		.bulletPoint {
+			height: 100%;
+			display: block;
+			padding-top: 8px;
+			background-color: $Bright-Red;
+			color: $Vary-Light-Gray;
+			font-size: 20px;
+			font-weight: 700;
+			border-radius: 30px;
+			width: 80px;
+			text-align: center;
+			margin-right: 20px;
+		}
+		.aboutContent {
+			padding-left: 101px;
+			padding-top: 6px;
+		}
+	}
+}
+
+/*=====  End of about us section  ======*/
+
+/*=============================================
+=            testimonials section             =
+=============================================*/
+.test {
+	margin-top: 70px;
+	h1 {
+		text-align: center;
+		margin-bottom: 100px;
+	}
+	.started {
+		margin: 0 auto;
+		display: block;
+	}
+}
+.testimonialSlide {
+	width: 130%;
+	left: -15%;
+	margin-bottom: 50px;
+	.slick-list {
+		overflow: visible;
+	}
+}
+.testCard {
+	background-color: $Vary-Light-Gray;
+	text-align: center;
+	margin-right: 30px;
+	img {
+		width: 80px;
+		margin: 0 auto;
+		margin-bottom: -16px;
+		display: block;
+		position: relative;
+		top: -50px;
+	}
+	h2 {
+		font: 700 1em $main-font;
+		margin-bottom: 20px;
+	}
+	p {
+		padding: 0 5%;
+		margin-bottom: 40px;
+	}
+}
+
+/*=====  End of testimonials section   ======*/
+
+/*=============================================
+=            footer            =
+=============================================*/
+footer {
+	margin-top: 150px;
+	.banner {
+		background-color: $Bright-Red;
+		height: 250px;
+		.container {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			height: 100%;
+			p {
+				color: white;
+				font: 700 2.2em $main-font;
+				width: 40%;
+			}
+		}
+	}
+	.startedAlt {
+		// box-shadow: none;
+		background-color: rgba(255, 255, 255, 1);
+		color: $Bright-Red;
+		transition: color, .3s;
+		&:hover {
+			opacity: 1;
+			// background-color: rgba(255, 255, 255, 1);
+			color: hsla(12, 88%, 59%, 0.5);
+			transition: color, .3s;
+		}
+	}
+}
+.footerMain {
+	background-color: $Very-Dark-Blue;
+	padding: 30px 0;
+	.container {
+		display: flex;
+		justify-content: space-between;
+		height: 130px;
+	}
+	.footerTitle {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		.socialButtons {
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+			a:hover {
+				path {
+					fill: $Bright-Red;
+				}
+			}
+		}
+	}
+	.footerNav {
+		display: flex;
+		justify-content: space-between;
+		width: 40%;
+		a {
+			color: white;
+			font-size: .9em;
+			text-decoration: none;
+		}
+	}
+	.navCol {
+		display: grid;
+		grid-template-rows: repeat(4, 1fr);
+	}
+
+	.updatesForm {
+		input {
+			height: 45px;
+			padding: 0 30px;
+			border: none;
+			border-radius: 40px;
+			color: $Dark-Grayish-Blue;
+		}
+		button {
+			height: 45px;
+			padding: 0 20px;
+			border-radius: 40px;
+			border: none;
+			background-color: $Bright-Red;
+			color: white;
+			font-weight: 700;
+			cursor: pointer;
+			opacity: 1;
+			transition: opacity .3s;
+			&:hover {
+				opacity: .5;
+				transition: opacity .3s;
+			}
+		}
+	}
+}
+/*=====  End of footer  ======*/

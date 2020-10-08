@@ -1,0 +1,22 @@
+@import '_vars';
+
+/*=============================================
+=            tablet            =
+=============================================*/
+
+@media screen and (max-width: 1024px) {
+	header {
+		.started {
+			display: none;
+		}
+		.topNavigation {
+			width: 60%;
+		}
+	}
+	.footerMain {
+		.footerNav {
+			width: 35%;
+		}
+	}
+}
+/*=====  End of tablet  ======*/
